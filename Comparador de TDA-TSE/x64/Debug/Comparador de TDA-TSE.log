@@ -1,0 +1,8 @@
+﻿  Comparador de TDA-TSE.cpp
+C:\Users\dell0\OneDrive\Documentos\GitHub\Comparador-de-estructuras-master\Comparador-de-estructuras-master\Comparador de TDA-TSE\estructuras.h(759,9): warning C4101: 'inicio1x': variable local sin referencia
+  (compilando archivo de origen "Comparador%20de%20TDA-TSE.cpp")
+  
+C:\Users\dell0\OneDrive\Documentos\GitHub\Comparador-de-estructuras-master\Comparador-de-estructuras-master\Comparador de TDA-TSE\estructuras.h(759,19): warning C4101: 'fin1x': variable local sin referencia
+  (compilando archivo de origen "Comparador%20de%20TDA-TSE.cpp")
+  
+  Comparador de TDA-TSE.vcxproj -> C:\Users\dell0\OneDrive\Documentos\GitHub\Comparador-de-estructuras-master\Comparador-de-estructuras-master\x64\Debug\Comparador de TDA-TSE.exe
