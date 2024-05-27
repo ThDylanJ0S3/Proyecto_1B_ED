@@ -722,7 +722,7 @@ void mainEstructuras ( ) {
 
 
 	fin = time(NULL);
-	std::printf("Se tardo en crear el arbol: %f segundos\n", difftime(fin, inicio));
+	std::printf("Se tardo en crear el arbol binario: %f segundos\n", difftime(fin, inicio));
 
 	//std::cout << "imptimiendo btree" << std::endl;
 	//desplegar ( rootBTREE );
@@ -741,7 +741,7 @@ void mainEstructuras ( ) {
 
 	//--------------Logica para agregar y enumerar los nodos del arbol avl de la informacion de la lista enlazada------------------------
 
-	time_t inicio1, fin1{};
+	time_t inicio1 , fin1;
 	inicio1 = time(NULL);
 	while (aux1 != NULL) {
 		insertarAVL(rootAVL, aux1->votante);
@@ -749,41 +749,41 @@ void mainEstructuras ( ) {
 	}
 
 
-	fin = time(NULL);
-	std::printf("Se tardo en crear el arbol: %f segundos\n", difftime(fin1, inicio1));
-	system("PAUSE");
+	fin1 = time(NULL);
+	std::printf("Se tardo en crear el arbol avl: %f segundos\n", difftime(fin1, inicio1));
 	//std::printf("Se muestra el contenido del arbol avl\n");
 	//preOrder(rootAVL);
 
 
 	time_t inicio1x, fin1x;
-	iniciox = time(NULL);
+	inicio1x = time(NULL);
 
 	liberarArbolAVL(rootAVL);
-	std::printf("arbol podado");
+	fin1x = time(NULL);
+	std::printf("Se elimino el arbol avl, se duro: %f segundos\n", difftime(fin1x, inicio1x));
 
-	finx = time(NULL);
 	system("PAUSE");
 
 
 	// ----------------------Logica para poder insertar y eliminar el arbol binario de busqueda la informacion de la lista enlazada---------------------
 
+	time_t inicio2, fin2;
+	inicio2 = time(NULL);
 	while (aux2 != NULL) {
 		InsertarBB(rootBB, aux2->votante);
 		aux2 = aux2->siguiente;
 	}
+	fin2 = time(NULL);
+	std::printf("Se tardo en crear el arbol binario de busqueda: %f segundos\n", difftime(fin2, inicio2));
 
-
-	std::printf("se procede a eliminar el arbol\n");
+	std::printf("se procede a eliminar el arbol binario de busqueda\n");
 	time_t inicio2x, fin2x;
 
 	inicio2x = time(NULL);
-
 	PodarHojas(rootBB);
-	std::printf("arbol podado");
-
 	fin2x = time(NULL);
 	std::printf("Se podaron las hojas, se duro: %f segundos\n", difftime(fin2x, inicio2x));
+
 	system("PAUSE");
 
 
